@@ -93,13 +93,15 @@
 
 1、右上角点击 `Fork` 当前项目。
 
-2、[https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) 申请 `token`, 勾选读写权限, 复制并保存 Token。
+2、[https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) 申请 `token`, 勾选相应的权限, 如果不懂就全部选中，复制并保存Token。
 
-3、打开 https://github.com/你的用户名/nav/actions 检查是否已开启 action 自动部署
+3、https://github.com/用户名/nav/settings/secrets/actions/new 添加申请的token， name填写 TOKEN 大写。
 
-4、修改项目根目录配置文件 [nav.config.yaml](nav.config.yaml) 只需要修改仓库地址 `gitRepoUrl` 字段
+4、打开 https://github.com/你的用户名/nav/actions 检查是否已开启 action 自动部署
 
-5、打开 https://你的用户名.github.io/nav 就能看到一个非常强大的导航网站了。
+5、修改项目根目录配置文件 [nav.config.yaml](nav.config.yaml) 只需要修改仓库地址 `gitRepoUrl` 字段
+
+6、打开 https://你的用户名.github.io/nav 就能看到一个非常强大的导航网站了。
 
 如果打开 404，请打开 https://github.com/你的用户名/nav/settings/pages 检查分支是否是 **gh-pages**。
 
